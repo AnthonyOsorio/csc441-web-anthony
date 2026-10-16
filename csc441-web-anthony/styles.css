@@ -3,17 +3,43 @@
 --text: #1a1a1a; --text-muted: #6b7280; --accent: #2563eb; --background: #ffffff; --border: #e5e7eb;
 }
 body {
-font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text);
+font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text);
 background: var(--background);
 line-height: 1.6;
 max-width: 42rem;
 margin: 0 auto;
 padding: 3rem 1.5rem;
 }
-h1 { font-size: 2.5rem; margin-bottom: 0.25rem; }
+h1 { font-size: 2.5rem; line-height:5rem; margin-bottom: 0.25rem; } /* Class 12: Step2: my own scale */
 header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0; }
 h2 {
+font-size: 1.75rem;
+line-height: 1.2rem;
 margin-top: 2.5rem;
 border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+
+}
+p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    
 }
 footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+.portrait {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+section {
+    margin-bottom: 3rem;
+}
+ul{
+    padding-left: 0.5rem;
+
+}
+li {
+    margin-bottom: 0.5rem;
+
+}
