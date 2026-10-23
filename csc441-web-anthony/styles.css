@@ -41,9 +41,15 @@ p {
 
 }
 /* Lab 12 · Task 3: footer */ 
+/* Lab 14 · Task 4: footer stacks on narrow screens */
 footer {
 border-top: 1px solid var(--border); padding-top: 1.5rem;
+flex-direction: column;
+gap: 0.5rem;
+align-items: center;
+padding-top: 1.5rem;
 display: flex;
+
 justify-content: space-between; align-items: center;
 }
 .portrait {
@@ -86,5 +92,36 @@ nav a:hover {
 nav a.current {
     border-bottom-color: var(--accent);
     color: var(--accent);
-    
+
 }
+
+/* Lab 14 . Task 1: the nav stacks on narrow screens */
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2 rem;
+
+}
+
+@media (min-width: 40rem) {
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+
+    }
+}
+.cards {
+    justify-content: center;
+    align-items: flex-start;
+
+}
+@media (min-width: 40rem) { 
+    footer {
+        flex-direction: row;
+        justify-content: space-between; }
+}
+
