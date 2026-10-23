@@ -64,7 +64,7 @@ ul{
 li {
 margin-bottom: 0.75rem; 
 padding-left: .5rem;
-border-left: 2px solid var(--border);
+border-left: 2px solid var(--background);
 
 }
 /* Lab 12 · Task 1: header side by side */ 
@@ -80,5 +80,11 @@ nav a {
 
 }
 nav a:hover {
-    border-bottom-color: var (--accent);
+    border-bottom-color: var (var(--text));
+}
+/* Lab13 . Task 1: which page am I on */
+nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+    
 }
