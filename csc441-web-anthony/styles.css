@@ -137,3 +137,9 @@ margin-bottom: 2rem;
 display: flex; justify-content: space-between; align-items: center; 
 }
 
+body.dark{
+    --text: white; 
+    --text-muted: silver; 
+    --accent: skyblue; 
+    --background: black; 
+    --border: dimgray;}
