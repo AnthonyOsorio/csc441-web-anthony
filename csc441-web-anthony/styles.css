@@ -1,11 +1,15 @@
 /* Class 16: Step 3: padding counts inside width, not on top of it */
 * {
     box-sizing: border-box;
-
 }
 /* Class 1 1 · Step 4: the basics */
 :root {
 --text: #fffdfd; --text-muted: #cecece; --accent: #2563eb; --background: #7b6561; --border: #504240;
+
+--error: crimson;
+}
+body.dark {
+--error: lightsalmon;
 }
 body {
 font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text);
@@ -35,10 +39,10 @@ margin-bottom: 1rem;
 }
 /* Lab 11 · Task 4: links */ 
 a {
-color: var(--accent); 
+color: var(--text); 
 text-decoration: none; 
 border-bottom: 1px solid transparent;
-a:hover { border-bottom-color: var(--accent); }
+a:hover { border-bottom-color: var(--text); }
 }
 p {
     font-size: 1.05rem;
@@ -175,14 +179,18 @@ body.dark{
         background: var(--accent);
         border: none;
         border-radius: 6px;
-        padding: 0.6rem;
+        padding: 0.6rem 1.4rem; 
         cursor: pointer;
 
     }
     #form-status{
         font-weight: 700;
-        color: var(--accent);
+        color: var(--text);
 
 
     }
-    
+
+
+/* Lab 16 · Task 1: the error state */ 
+#form-status.error {
+color: var(--error); }

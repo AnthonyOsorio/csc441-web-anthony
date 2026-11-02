@@ -6,6 +6,7 @@
 
 <title>contact - Anthony Osorio</title>
 <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <!---Class 12: Step 1: a typeface I chose --->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,10 +24,11 @@ rel="stylesheet">
             <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="projects.html" class="current">Projects</a>
+            <a href="projects.html">Projects</a>
         </li>
         <li><a href="contact.html" >Contact</a></li>
-        <li><a href="contactplus.html" class="current" >Contactplus</a></li>
+        <li><a href="contactplus.html" class="current" >Contact Form</a></li>
+        <li><button id="theme-toggle" type="button">Dark</button></li>
         <!-- Class 16: Step 1: the contact link -->
         
     </ul>
@@ -42,32 +44,35 @@ rel="stylesheet">
   <div>
     
 <h1>Contact</h1>
-<p>Questions about the course, or something else</p> </header>
+<p>Questions about my experience, or something else?</p> </header>
 </div>
 </body>
+
 <!-- Class 16: Step 2: a form -->
+ <body>
      <form id="contact-form">
-        <p>
-            <label for="name">Your name</label>
-            <input id=""name="name" type="text" required>
-        </p>
-        <p>
+    <p>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+    </p>
 
-       
-        <label label for="email">Your email</label>
+    <p>
+        <label for="email">Your email</label>
         <input id="email" name="email" type="email" required>
-        <p>
-            <label for="message">Message</label>
-            <input id="message=" name="message" rows="5" required>
+    </p>
 
-        </p>
-        <p>
-            <button type = "submit">Send</button>
+    <p>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <p id="char-count">0 characters</p>
+    </p>
 
-        </p>
-     </form>
-     <p id="form-status" role="status"> 
-     </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>
+
+<p id="form-status" role="status"></p>
 
   
   <!-- Lab 12 · Task 3: two things in the footer -->
