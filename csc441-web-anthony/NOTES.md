@@ -1,28 +1,80 @@
 ## Week 8, Friday
 On a phone, the information in specific catogories were more indented.  I fixed it by redcing the left padding to .5 in li.
+
 ## Week 9, Wednesday
 1. What are your three pages, and why those three?
 
 The three pages are Home, Projects, and Contact, so the user can not only learn information about me but contact me if neccessary.
+
 2. You changed one thing in styles.css and all three pages changed.
 What would you have had to do if each page carried its own copy?
 
 If each page carried its own copy, each copy would have to be altered respectively to their corresponding page.
+
 3. What is one thing on your page you don't know how to change yet?
 
 One thing I dont know how to change yet is the addition of animated visuals or features within it 
+
 # Week 9, Friday
 1. What width did you pick for your breakpoint, and how did you choose it?
 
 I chose 40 rem as everything seemed to fit perfectly within the page using the measurment.
+
 2. The two things you found and fixed at phone width.
 
 I did not find anything that necessarily needed to be fixed. Everything fit perfectly.
+
 3. In your own words: what is the difference between justify-content
 and align-items? 
 
 The command align-items moves items vertically while justify-content moves them horizontally.
+
 4. Why does the plain rule hold the narrow layout and the media query
 hold the wide one, instead of the other way round?
 
 The plain rule handles small screens by default, and the media query adjusts the layout for a wider more complex designs.
+
+## Week 10, Wednesday
+1. In your own words: what is the difference between HTML, CSS and
+JavaScript? One sentence each.
+
+HTML is the base setup for your ui. CSS is to change aspects or elements of the ui in more detail. Javascript is to add  features and functionality to your ui.
+
+2. What does `defer` do on the script tag, and what breaks without it?
+
+`defer` tells the browser to dowload the JavaScript while reading HTML without its execution until the HTML is read. without it themeButton would be null.
+
+3. Dark mode changed your whole site with five lines of CSS. Why did that work? What would you have had to do without variables? 
+
+It worked because the five lines called all the recolored elements needed to change the page. Without the variables you would have to change each of the base colors set.
+
+4. Something went wrong this week and the Console said nothing at all. What was it, and how did you eventually find it?
+
+One thing that went wrong was the dark mode not functioning when pressed, I later solved this by debugging my code and found it had been a syntactical mistake as I had missed hashtags in certain spots.
+
+5. What is one thing on your page you don't know how to change yet?
+
+I dont know how to make my image more dynamic or add dynamic features within my pages in general.
+
+## Week 10, Friday
+1. What does event.preventDefault() do, and what happens without it?
+
+event.preventDefault() stops the browser from performing its default action for an event. Without it the page would reset.
+
+2. You got "Cannot read properties of null" in class. In your own
+words, why did it happen, and why did if fix it?
+
+The error happened because JavaScript was trying to access an HTML element that it couldn't find. The if fixed it as if checks whether the element exists before trying to use it.
+
+3. What rule did you write for your form, and why that rule?
+
+For my rule chose to give errors if messages a less than 10 characters and that messages couldnt only be special characters so messages could be more coherent and not random while also being a reasonable length.
+
+4. The two things you found and fixed at phone width.
+
+I did not find anything that really needed to be fixed and felt content with how the phone width behaved.
+
+5. Your form does not actually send anything anywhere yet. What do
+you think is missing? 
+
+I think that the website is missing a method of sending the users responses to the developer in some way, whehther it be through messages or email, the developer should be notified.
