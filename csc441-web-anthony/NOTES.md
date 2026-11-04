@@ -26,3 +26,5 @@ The command align-items moves items vertically while justify-content moves them 
 hold the wide one, instead of the other way round?
 
 The plain rule handles small screens by default, and the media query adjusts the layout for a wider more complex designs.
+## Week 11, Wednesday
+Live site: https://anthonyosorio.netlify.app
