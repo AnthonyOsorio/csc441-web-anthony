@@ -28,3 +28,21 @@ hold the wide one, instead of the other way round?
 The plain rule handles small screens by default, and the media query adjusts the layout for a wider more complex designs.
 ## Week 11, Wednesday
 Live site: https://anthonyosorio.netlify.app
+1. In your own words: what does GitHub do, and what does Netlify do?
+
+Git hub holds the code for your project or website, while Netfily hosts the code and displays it to the public.
+
+2. You are about to merge into development and your live site will
+   not change. Why?
+
+The branch Netlify takes which is the release branch has not been changed only the development.
+
+3. What does the padlock in the address bar actually mean?
+
+The padlock icon in the browser's address bar indicates that the connection to the website is using HTTPS,
+
+
+4. Your repository is public and now your site is too. Is there
+anything in your repo you would not hand a stranger?
+
+Something in my repository I would most likely not give to a stranger are the screen shots i've taken.
