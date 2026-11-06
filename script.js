@@ -67,7 +67,7 @@ messageInput.addEventListener("input", function () {
         formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + ". Your message is ready to send.";
 
-        contactForm.reset();
+        contactForm.submit();
         charCount.textContent = "0 characters";
     });
 }

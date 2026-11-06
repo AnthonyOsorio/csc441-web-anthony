@@ -194,3 +194,8 @@ body.dark{
 /* Lab 16 · Task 1: the error state */ 
 #form-status.error {
 color: var(--error); }
+/* Class 18: Step 2: honeypot, hidden from people */
+.hidden-field{
+    display: none;
+
+}
