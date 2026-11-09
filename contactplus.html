@@ -4,7 +4,7 @@
 
 <!-- Class 16: Step 1: my contact page -->
 
-<title>contact - Anthony Osorio</title>
+<title>Contact - Anthony Osorio</title>
 <link rel="stylesheet" href="styles.css">
 <script src="script.js" defer></script>
 </head>
@@ -43,7 +43,7 @@ rel="stylesheet">
   <img src="images/me.jpg" alt="Portrait of YOUR NAME" class="portrait">
   <div>
     
-<h1>Contact</h1>
+<h1>Contact Form</h1>
 <p>Questions about my experience, or something else?</p> </header>
 </div>
 </body>
@@ -51,7 +51,7 @@ rel="stylesheet">
 <!-- Class 16: Step 2: a form -->
  <body>
     <!-- Class 18: Step 1: let Netlify handle the submmission -->
-    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
         <p class="hidden-field">
             <label>Leave this empty: <input name="bot-field" type="text"></label>
 
@@ -84,9 +84,10 @@ rel="stylesheet">
   
   <!-- Lab 12 · Task 3: two things in the footer -->
   <footer>
-    <p>© 2026 Anthony Osorio</p>
+    <p>© <span id="year"></span> Anthony Osorio</p>
 <!-- Lab 11 · Task 3: a link off my page -->
   <a href="https://github.com/AnthonyOsorio" target="_blank" rel="noopener">GitHub</a>
+  <button id="go-back" type="button">Go back</button>
 </footer>
 </body>
 </html>
