@@ -98,3 +98,34 @@ The padlock icon in the browser's address bar indicates that the connection to t
 anything in your repo you would not hand a stranger?
 
 Something in my repository I would most likely not give to a stranger are the screen shots i've taken.
+Three things I learned doing this on my own domain. One: your registrar has already created a www record you did not ask for, pointing at a parking page, and you have to delete theirs before you can add yours or you get a conflict error. Two: leave the MX rows alone. Those are email, not website. Delete one and your site keeps working perfectly while your mail silently stops, so nothing warns you. Three: after you save, check dnschecker.org and wait. Fifteen minutes to a few hours is normal and it is not broken.
+
+## Week 11, Friday
+1. Your form has a hidden field nobody can see. Explain what it is
+for, and why it works better than asking people to prove they
+are human.
+
+The field is a honeypot which users dont have access to but spam bots usually end up filling, marking those messages as spam. This is better than asking people to prove they're human as it removes an obstacle or steps that delay the process of sending the message, making it a smoother process.
+
+2. What is a Deploy Preview, and when would you actually use one?
+
+Deploy preview is a private viewable version of your build, that gives you the oppurtunity to verify it to see whether it is functioning how you expect.
+
+3. The two things you found and fixed on a real phone.
+
+I added the go back buttons to tabs that did not have it, and changed the header name of my form page to "Contact Form", as I already had a contact page that used "Contact" as a heading. functionality wise everything is working fine.
+
+4. Describe the path a change takes from your laptop to the public,
+naming every branch it passes through.
+
+First your change happens in a sepereate branch that later gets merged into development, if the code is working as expected it will then get merged from development to the release branch where everything is finalized and the website changes are publically shown.
+
+5. Your site now has two addresses, the netlify.app one and your
+own domain. Why do both still work?
+
+Netlify doesn't remove its original URL when you connect a custom domain. Instead, it allows multiple addresses to point to the exact same deployed website.
+
+6. Your site is on the internet now. What is one thing you want to
+add before the end of the semester?
+
+One thing I would like to add is more movable ui elements like pictures, or tabs that slide in certain directions.
