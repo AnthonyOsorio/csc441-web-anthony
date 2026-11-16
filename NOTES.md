@@ -78,6 +78,7 @@ I did not find anything that really needed to be fixed and felt content with how
 you think is missing? 
 
 I think that the website is missing a method of sending the users responses to the developer in some way, whehther it be through messages or email, the developer should be notified.
+
 ## Week 11, Wednesday
 Live site: https://anthonyosorio.netlify.app
 1. In your own words: what does GitHub do, and what does Netlify do?
@@ -98,7 +99,7 @@ The padlock icon in the browser's address bar indicates that the connection to t
 anything in your repo you would not hand a stranger?
 
 Something in my repository I would most likely not give to a stranger are the screen shots i've taken.
-Three things I learned doing this on my own domain. One: your registrar has already created a www record you did not ask for, pointing at a parking page, and you have to delete theirs before you can add yours or you get a conflict error. Two: leave the MX rows alone. Those are email, not website. Delete one and your site keeps working perfectly while your mail silently stops, so nothing warns you. Three: after you save, check dnschecker.org and wait. Fifteen minutes to a few hours is normal and it is not broken.
+
 
 ## Week 11, Friday
 1. Your form has a hidden field nobody can see. Explain what it is
@@ -129,3 +130,37 @@ Netlify doesn't remove its original URL when you connect a custom domain. Instea
 add before the end of the semester?
 
 One thing I would like to add is more movable ui elements like pictures, or tabs that slide in certain directions.
+
+## Week 12, Wednesday, Lab 19
+1. In your own words, what is stored in a database table?
+
+A database table stores organized information in rows and columns.
+
+2. What is the difference between a table and an API endpoint? 3. What does GET do? What format did your endpoint return?
+
+A table is where information is stored in a database, while an API endpoint is a URL that allows an application to interact with that information, such as retrieving or updating records. GET is an HTTP request method used to retrieve information from a server without changing the stored data. My endpoint returned the information in JSON format, specifically as an array of objects.
+
+4. Why do we use a publishable key, not a secret key?
+
+We use a publishable key because it is designed to be used in client-side applications and is safe to expose publicly when proper security is used. A secret key provides elevated access and should stay private because exposing it could allow unauthorized people to access or modify database information.
+
+5. What changed when select=* became select=title,category?
+
+When we used select=*, the endpoint returned all available columns for each record. Changing it to select=title,category limited the response to only the title and category columns. This allows us to retrieve only the information we actually need.
+
+## Week 12, Friday — Lab 20
+1. What does fetch() send and what does response.json() return? 2. Why does the page use textContent instead of innerHTML?
+
+fetch() sends an HTTP request to the Supabase API endpoint to retrieve database records. response.json() reads the response and converts the JSON data into a JavaScript object or array that the page can use. The page uses textContent as it displays text without interpreting it as HTML. This is safer because it helps prevent malicious code or HTML from being injected into the webpage.
+
+3. What happens when Supabase returns an empty list?
+
+The page receives an empty array, meaning there are no records to display.
+
+4. How does the page behave when the network fails?
+
+The request fails, and the error is caught by the error-handling code, which ends up displaying an error message instead of pretending the data loaded successfully.
+
+5. What is the proof that a card is NOT hardcoded in HTML?
+
+the proof is that the cards appear after the JavaScript fetches records from Supabase. The Network tab shows a successful HTTP 200 response, and the page displays five items, demonstrating that the cards are generated dynamically from database data.
