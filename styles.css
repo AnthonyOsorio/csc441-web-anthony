@@ -145,6 +145,12 @@ border-bottom: 1px solid var(--border);
 margin-bottom: 2rem;
 display: flex; justify-content: space-between; align-items: center; 
 }
+#go-back{
+    background-color: var(--text);
+    color: var(--background);
+    font-family: 'Figtree', sans-serif;
+    border: none;
+}
 #theme-toggle {
     background-color: var(--text);
     color: var(--background);
