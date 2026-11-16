@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "title": "FF7 Trilogy",
+        "description": "A Fantsay like action RPG where players journey around the planet to save it",
+        "catagory": "Fantasy",
+        "image_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80",
+        "created_at": "2026-11-15T22:40:05.87487+00:00"
+    },
+    {
+        "id": 2,
+        "title": "Destiny",
+        "description": "A futuristic, fantsay like space themed looter shooter where players defeat evil aliens ",
+        "catagory": "Space",
+        "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80",
+        "created_at": "2026-11-15T22:40:05.87487+00:00"
+    },
+    {
+        "id": 3,
+        "title": "Minecraft",
+        "description": "A simple blocky creative sandbox game where players can build and explore",
+        "catagory": "Creative",
+        "image_url": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=80",
+        "created_at": "2026-11-15T22:40:05.87487+00:00"
+    },
+    {
+        "id": 4,
+        "title": "Roblox",
+        "description": "A sandbox game where players can join a variety of player made servers and participate in a vast amount of activities",
+        "catagory": "Creative",
+        "image_url": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1000&q=80",
+        "created_at": "2026-11-15T22:40:05.87487+00:00"
+    },
+    {
+        "id": 5,
+        "title": "Monster Hunter Wilds",
+        "description": "An action RPG where players maintain ecosystems by hunting dangerous monsters",
+        "catagory": "Fantasy",
+        "image_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80",
+        "created_at": "2026-11-15T22:40:05.87487+00:00"
+    }
+]
+
